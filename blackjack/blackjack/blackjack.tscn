@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://h5jshxphf8rb"]
+
+[ext_resource type="Script" uid="uid://pghyjfses0a6" path="res://blackjack/Blackjack.cs" id="1_l4x3l"]
+[ext_resource type="Script" uid="uid://bmrbni3sk8af1" path="res://blackjack/Display.cs" id="2_0xm2m"]
+[ext_resource type="PackedScene" uid="uid://cbrqmmolupj11" path="res://card.tscn" id="3_h2yge"]
+
+[node name="Blackjack" type="Node2D" unique_id=1775619345 node_paths=PackedStringArray("_display")]
+script = ExtResource("1_l4x3l")
+_display = NodePath("Display")
+
+[node name="Display" type="Control" parent="." unique_id=647302692]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("2_0xm2m")
+_cardScene = ExtResource("3_h2yge")

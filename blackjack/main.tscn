@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://cqfkuwsqbpra"]
+
+[ext_resource type="Script" uid="uid://ba2gmslq00l7u" path="res://Main.cs" id="1_0xm2m"]
+[ext_resource type="PackedScene" uid="uid://y3ui0qhl026v" path="res://world/world.tscn" id="2_1bvp3"]
+[ext_resource type="PackedScene" uid="uid://h5jshxphf8rb" path="res://blackjack/blackjack.tscn" id="2_h2yge"]
+[ext_resource type="Script" uid="uid://cy1r8drpfm82w" path="res://SceneManager.cs" id="4_1bvp3"]
+
+[node name="Main" type="Node2D" unique_id=1404226607]
+script = ExtResource("1_0xm2m")
+
+[node name="World" parent="." unique_id=555871268 instance=ExtResource("2_1bvp3")]
+
+[node name="Blackjack" parent="." unique_id=1775619345 instance=ExtResource("2_h2yge")]
+
+[node name="SceneManager" type="Node" parent="." unique_id=1639038477]
+script = ExtResource("4_1bvp3")
